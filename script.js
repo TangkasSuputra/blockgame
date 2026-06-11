@@ -245,7 +245,7 @@ function init() {
 init();
 
 
-}/* =====================================
+/* =====================================
    BLOCK BLAST NEON GLASS
    SCRIPT 2
    PIECES + DRAG SYSTEM
