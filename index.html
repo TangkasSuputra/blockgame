@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Blast Neon Glass</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Glow -->
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+    <div class="bg-glow glow-3"></div>
+
+    <main class="game-container">
+
+        <!-- HEADER -->
+        <header class="top-panel glass">
+
+            <div class="score-box">
+                <span class="label">SCORE</span>
+                <span id="score">0</span>
+            </div>
+
+            <div class="title-box">
+                <h1>BLOCK BLAST</h1>
+                <span>Neon Glass Edition</span>
+            </div>
+
+            <div class="score-box">
+                <span class="label">HIGH SCORE</span>
+                <span id="highScore">0</span>
+            </div>
+
+        </header>
+
+        <!-- COMBO TEXT -->
+        <div id="comboText"></div>
+
+        <!-- BOARD -->
+        <section class="board-wrapper">
+
+            <div id="board" class="glass">
+                <!-- Dibuat oleh JS -->
+            </div>
+
+        </section>
+
+        <!-- PIECES -->
+        <section id="piecesArea">
+
+            <div class="piece-slot">
+                <div class="piece-holder" id="piece0"></div>
+            </div>
+
+            <div class="piece-slot">
+                <div class="piece-holder" id="piece1"></div>
+            </div>
+
+            <div class="piece-slot">
+                <div class="piece-holder" id="piece2"></div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- DRAG LAYER -->
+    <div id="dragLayer"></div>
+
+    <!-- PARTICLE CANVAS -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- GAME OVER -->
+    <div id="gameOverModal">
+
+        <div class="modal-card glass">
+
+            <h2>GAME OVER</h2>
+
+            <p id="finalScore">
+                Score: 0
+            </p>
+
+            <p id="recordText"></p>
+
+            <button id="restartBtn">
+                MAIN LAGI
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- JavaScript Files -->
+    <!-- ========================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
